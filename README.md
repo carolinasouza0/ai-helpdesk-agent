@@ -35,7 +35,7 @@ Para garantir que a IA não sofra "alucinações" e sempre retorne dados consum�
 
 1. **Clone o repositório:**
    \`\`\`bash
-   git clone https://github.com/SEU_USUARIO/ai-helpdesk-agent.git
+   git clone https://github.com/carolinasouza0/ai-helpdesk-agent.git
    cd ai-helpdesk-agent
    \`\`\`
 
