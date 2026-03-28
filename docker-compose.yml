@@ -1,0 +1,9 @@
+services:
+  ai-backend:
+    build: ./backend
+    container_name: ai-helpdesk-backend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env
+    restart: unless-stopped

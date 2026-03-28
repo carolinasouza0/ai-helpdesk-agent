@@ -1,0 +1,81 @@
+@use '../01-settings/variables' as *;
+
+// Bloco: Botão
+.c-button {
+  width: 100%;
+  padding: 12px;
+  background-color: $color-primary;
+  color: white;
+  border: none;
+  border-radius: $radius-md;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 0.9; }
+  &:disabled { background-color: $color-text-muted; cursor: not-allowed; }
+}
+
+// Bloco: Formulário
+.c-form {
+  background: $color-surface;
+  padding: 2rem;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+  max-width: 600px;
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid $color-border;
+    border-radius: $radius-md;
+    margin-bottom: 1rem;
+    resize: vertical;
+  }
+}
+
+// Bloco: Card de Ticket
+.c-ticket {
+  background: $color-surface;
+  padding: 1.5rem;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+  margin-bottom: 1rem;
+  border-left: 6px solid $color-border; // Cor padrão
+
+  // Modificadores BEM baseados na IA
+  &--critica { border-left-color: $color-urgency-critica; }
+  &--alta { border-left-color: $color-urgency-alta; }
+  &--media { border-left-color: $color-urgency-media; }
+  &--baixa { border-left-color: $color-urgency-baixa; }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+  }
+
+  &__badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    &--critica { background: $color-urgency-critica; }
+    &--alta { background: $color-urgency-alta; }
+    &--media { background: $color-urgency-media; }
+    &--baixa { background: $color-urgency-baixa; }
+  }
+
+  &__suggestion {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: $color-bg-light;
+    border-radius: $radius-md;
+    font-size: 0.9rem;
+  }
+}

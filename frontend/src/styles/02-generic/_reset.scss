@@ -1,0 +1,8 @@
+@use '../01-settings/variables' as *;
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: $color-bg-light;
+  color: $color-text-main;
+}
